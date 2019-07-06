@@ -77,7 +77,7 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
                 {
                     transaction.show(mtab1);
                 }
-                mImgWeixin.setImageResource(R.mipmap.ic_launcher_round);
+                mImgWeixin.setImageResource(R.drawable.homepage);
                 break;
             case 1:
                 if(mtab2==null){
@@ -87,7 +87,7 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
                 {
                     transaction.show(mtab2);
                 }
-                mImgFri.setImageResource(R.mipmap.ic_launcher_round);
+                mImgFri.setImageResource(R.drawable.message);
                 break;
             case 2:
                 if(mtab3==null){
@@ -98,7 +98,7 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
                     transaction.show(mtab3);
 
                 }
-                mImgMe.setImageResource(R.mipmap.ic_launcher_round);
+                mImgMe.setImageResource(R.drawable.mine);
                 break;
         }
         transaction.commit();
@@ -139,8 +139,9 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
     }
 
     private void resetImg() {
-        mImgWeixin.setImageResource(R.mipmap.ic_launcher);
-        mImgFri.setImageResource(R.mipmap.ic_launcher);
-        mImgMe.setImageResource(R.mipmap.ic_launcher);
+
+        mImgWeixin.setImageResource(R.drawable.homepage_u);
+        mImgFri.setImageResource(R.drawable.message_u);
+        mImgMe.setImageResource(R.drawable.mine_u);
     }
 }

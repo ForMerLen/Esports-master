@@ -12,10 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity.TestActivity"></activity>
-        <activity android:name=".Activity.RegisterActivity" />
-        <activity android:name=".Activity.HomeActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.TestActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".Activity.RegisterActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Activity.HomeActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".MainActivity" android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
